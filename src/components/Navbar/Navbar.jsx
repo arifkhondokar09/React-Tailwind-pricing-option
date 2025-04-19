@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from './Link';
+import { Menu, X } from 'lucide-react';
 const apiData = [
     {
         name: "Home",
@@ -22,15 +23,32 @@ const apiData = [
 
 ];
 
+
+const links=   apiData.map((route , index) => <Link key={index} route={route}> </Link>);
 const Navbar = () => {
+    const [open, setOpen]= useState(false)
     return (
 
 
-  <ul className='flex'>
+ <nav className='flex justify-between p-3 bg-gray-200 '>
+    <div className='flex   ' onClick={()=> setOpen(!open)}>
+        {open ? <X className='lg:hidden'></X> :  <Menu className='lg:hidden'></Menu> }
+   
+    {/* <AlignJustify className='lg:hidden'></AlignJustify> */}
+    <ul className={`lg:hidden absolute p-3 bg-gray-300 hover:text-amber-400 ${open ? "top-12": "-top-40"}`}>
     {
-        apiData.map( route => <Link route={route}> </Link>)
+            links
+        }
+    </ul>
+    <h1 className='ml-4 mt-2 font-bold'>MyNavBar</h1>
+    </div>
+     <ul className=' hidden lg:flex '>
+    {
+     links
     }
   </ul>
+  <button className='btn'>Sign In</button>
+ </nav>
 
         
 

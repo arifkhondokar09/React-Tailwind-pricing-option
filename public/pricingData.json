@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "title": "Basic",
+    "price": "$19/month",
+    "popular": true,
+    "description": "Ideal for individuals getting started.",
+    "features": [
+      "1 Website",
+      "5 GB Storage",
+      "Basic Analytics",
+      "Email Support",
+      "Community Access"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pro",
+    "price": "$49/month",
+    "description": "Perfect for freelancers or small teams.",
+    "features": [
+      "Up to 5 Websites",
+      "50 GB Storage",
+      "Advanced Analytics",
+      "Priority Email Support",
+      "Custom Domains",
+      "SEO Tools",
+      "Weekly Backups"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Enterprise",
+    "price": "$99/month",
+    "description": "Best for businesses with high demands.",
+    "features": [
+      "Unlimited Websites",
+      "1 TB Storage",
+      "Real-time Analytics",
+      "24/7 Dedicated Support",
+      "Advanced Security",
+      "Team Management",
+      "Custom Integrations",
+      "Daily Backups",
+      "Uptime Monitoring"
+    ]
+  }
+]
